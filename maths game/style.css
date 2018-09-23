@@ -1,0 +1,140 @@
+/*style.css*/
+html {
+    height: 100%;
+    background: radial-gradient(circle, #FFF, #CCC);
+    background: -webkit-radial-gradient(circle, #FFF, #CCC);
+    background: -moz-radial-gradient(circle, #FFF, #CCC);
+    background: -o-radial-gradient(circle, #FFF, #CCC);
+}
+
+.text-center {
+    text-align: center;
+}
+
+#container {
+    box-sizing: border-box;
+    height: 440px;
+    width: 590px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 100px auto;
+    background-color: #9DD2EA;
+    box-shadow: 0px 4px 0px 0px #009DE4;
+    position: relative;
+}
+
+#score {
+    background-color: #F1FF92;
+    color: #888E5F;
+    /*    border-bottom: solid 4px #9DA853;*/
+    box-shadow: 0px 4px #9DA853;
+    position: absolute;
+    left: 500px;
+    padding: 11px;
+}
+
+#correct,
+#wrong {
+    background: #42E252;
+    color: #fff;
+    padding: 11px;
+    position: absolute;
+    left: 245px;
+    display: none;
+}
+
+#wrong {
+    background: #DE401A;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background: #9DA0EA;
+    box-shadow: 0px 4px #535AA8;
+    font-size: 100px;
+    font-family: cursive, sans-serif;
+    line-height: 150px;
+}
+
+#information {
+    width: 450px;
+    height: 50px;
+    margin: 10px auto;
+    background: #B481D9;
+    box-shadow: 0px 4px #8153A8;
+    line-height: 50px;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    width: 85px;
+    height: 85px;
+    background: #FFF;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    line-height: 85px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.box:active,
+#startreset:active {
+    background-color: #9c89f6;
+    box-shadow: 0 0;
+    color: white;
+    top: 4px;
+}
+
+#box4 {
+    margin-right: 0px;
+}
+
+#startreset {
+    width: 100px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0px auto;
+    line-height: 38px;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+#timeremaining {
+    width: 170px;
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    background: #AFE64B;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: none;
+}
+
+#gameover {
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(#F3C76B, #F3746C);
+    color: #FFF;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+    display: none;
+}
